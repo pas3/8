@@ -1,13 +1,3 @@
-/*
- * Bashir Electronic — Unified 13.02–14.02 dispatcher
- *
- * User-facing payload label: Bollywood (بوليوود).
- * The actual payload remains GoldHEN 2.4b18.14 and its original filename,
- * mode, and bytes are intentionally unchanged.
- *
- * The 13.x and 14.x engines are kept in isolated function scopes so their
- * original local names do not collide. Only the matching engine is invoked.
- */
 import { establishPrimitive as establishPrimitiveLegacy } from "./core.js?v=10";
 import { establishPrimitive as establishPrimitiveAfterglow } from "./core.js";
 import { installWindowP, pairStatus } from "./mem.js";
