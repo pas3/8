@@ -42,8 +42,7 @@ if (!isPS4) {
         window.setStatusMessage("هذه الصفحة مخصصة لأجهزة PS4. الإصدارات ذات المسارات البرمجية المتاحة: 6.72، 9.00–9.60، 10.00–11.02، 11.50–12.02، 12.50–13.00، 13.02–13.52، و14.00 و14.02.", "failure");
     });
 } else {
-    // Application Cache is retained for compatible PS4 browser versions.
-    // If the browser does not expose it, continue with the normal online loader.
+
     var appCache = window.applicationCache || null;
     var cacheIsUncached = appCache && appCache.status === 0;
 
