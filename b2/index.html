@@ -90,8 +90,7 @@ if (!isPS4) {
             document.head.appendChild(script);
         }
         else if (fwNum >= 12.50 && fwNum <= 14.02) {
-            // The local jb.js/offset table includes 12.50 through 14.02.
-            // Avoid the absent legacy chain_poops.js reference.
+
             var script = document.createElement('script');
             script.type = 'module';
             script.src = "slopkit/jb.js?v=20";
