@@ -14,7 +14,7 @@
     var match = userAgent.match(/PlayStation\s+4[\/ ](\d{1,2}\.\d{2})\b/i);
     var fwVersion = match ? match[1] : "غير معروف";
 
-    /* Only versions represented by this project's local files are routed. */
+
     var routes = {
         "9.00":  { cache: "cache900.html",       script: "900/alert.js",             module: true  },
         "9.03":  { cache: "cache900.html",       script: "900/alert.js",             module: true  },
@@ -120,7 +120,7 @@
         return;
     }
 
-    /* 6.72 has its own manifest and startup page. */
+
     if (fwVersion === "6.72") {
         window.location.replace("672/index.html");
         return;
