@@ -130,7 +130,6 @@ hr {
 }
 
 
-/* Keep Latin firmware versions and cache percentages isolated inside Arabic text. */
 #msgs bdi {
   direction: ltr;
   unicode-bidi: isolate;
